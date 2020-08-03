@@ -111,7 +111,7 @@ visionH4.textContent = siteContent["main-content"]["vision-h4"]
 visionP.textContent = siteContent["main-content"]["vision-content"]
 
 
-/////CONTACT
+//////CONTACT
 let contactH4 = document.querySelector('.contact h4')
 let contactPees = document.querySelectorAll('.contact p')
 
