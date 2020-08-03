@@ -42,14 +42,13 @@ const siteContent = {
   }
 }
 
-/////HEADER/////
 
-//LOGO Example: Update the img src for the logo
+/////LOGO Example: Update the img src for the logo
 let logo = document.getElementById('logo-img')
 ;``
 logo.setAttribute('src', siteContent['nav']['img-src'])
 
-//NAV
+/////NAV
 let navItems = document.querySelectorAll('a')
 
 navItems[0].textContent = siteContent['nav']['nav-item-1']
@@ -59,7 +58,7 @@ navItems[3].textContent = siteContent['nav']['nav-item-4']
 navItems[4].textContent = siteContent['nav']['nav-item-5']
 navItems[5].textContent = siteContent['nav']['nav-item-6']
 
-//CTA
+/////CTA
 let ctaH1 = document.querySelector('.cta-text h1')
 let ctaBtn = document.querySelector('.cta-text button')
 let ctaImg = document.querySelector('#cta-img')
@@ -67,3 +66,23 @@ let ctaImg = document.querySelector('#cta-img')
 ctaH1.textContent = siteContent["cta"]["h1"]
 ctaBtn.textContent = siteContent["cta"]["button"]
 ctaImg.src = siteContent["cta"]["img-src"]
+
+/////MAIN CONTENT
+//top - features/about
+let featuresH4 = document.querySelector('.top-content .text-content:nth-child(1) h4')
+let featuresP = document.querySelector('.top-content .text-content:nth-child(1) p')
+featuresH4.textContent = siteContent["main-content"]["features-h4"]
+featuresP.textContent = siteContent["main-content"]["features-content"]
+
+let aboutH4 = document.querySelector('.top-content .text-content:nth-child(2) h4')
+let aboutP = document.querySelector('.top-content .text-content:nth-child(2) p')
+aboutH4.textContent = siteContent["main-content"]["about-h4"]
+aboutP.textContent = siteContent["main-content"]["about-content"]
+
+//middle - img
+let middleImg = document.querySelector('#middle-img')
+middleImg.src = siteContent["main-content"]["middle-img-src"]
+
+//bottom - services/product/vision
+
+
